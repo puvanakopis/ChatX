@@ -9,7 +9,7 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 
 export default function PhoneCart({ loading, error, setError, handleLogin }) {
     return (
-        <div className="bg-[#0f172a] border border-[#1e293b] rounded-2xl shadow-2xl overflow-hidden p-8 sm:p-10 relative">
+        <div className="max-w-[480px] bg-[#0f172a] border border-[#1e293b] rounded-2xl shadow-2xl overflow-hidden p-8 sm:p-10 relative">
             <div className="text-center mb-8">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#1e293b]/20 border border-[#1e293b] mb-4 text-[#3b82f6]">
                     <span className="material-symbols-outlined text-2xl"><MdOutlineLockOpen /></span>
