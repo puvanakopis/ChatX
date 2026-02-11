@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { MdOutlineCelebration } from "react-icons/md";
@@ -87,12 +88,15 @@ export default function Home() {
 
         {/* CTA Button */}
         <div className="mt-12">
-          <button className="group relative inline-flex items-center gap-3 bg-[#3b82f6] hover:bg-[#2563eb] text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl shadow-[#3b82f6]/20">
+          <Link
+            href="/login"
+            className="group relative inline-flex items-center gap-3 bg-[#3b82f6] hover:bg-[#2563eb] text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl shadow-[#3b82f6]/20"
+          >
             <span>Get Started</span>
             <span className="material-symbols-outlined font-bold group-hover:translate-x-1 transition-transform">
               <IoMdArrowRoundForward />
             </span>
-          </button>
+          </Link>
         </div>
       </main>
 
