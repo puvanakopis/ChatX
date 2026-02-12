@@ -1,10 +1,8 @@
+"use client";
+
 import React from "react";
-import { MdOutlineChatBubbleOutline } from "react-icons/md";
-import { MdOutlineAddAPhoto } from "react-icons/md";
-import { MdOutlineModeEdit } from "react-icons/md";
-import { MdOutlineVisibility } from "react-icons/md";
-import { IoMdCheckmark } from "react-icons/io";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { MdOutlineChatBubbleOutline, MdOutlineAddAPhoto, MdOutlineModeEdit, MdOutlineVisibility } from "react-icons/md";
+import { IoMdCheckmark, IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { IoInformationCircleOutline } from "react-icons/io5";
 
 export default function Profile() {
@@ -45,13 +43,13 @@ export default function Profile() {
 
                                 <div className="flex items-center gap-6">
                                     <div className="relative group cursor-pointer">
-                                        <div className="w-24 h-24 rounded-full bg-[#172554] border-2 border-dashed border-[#1e40af] flex items-center justify-center overflow-hidden hover:border-primary transition-colors duration-300">
-                                            <span className="text-[#bfdbfe] text-3xl group-hover:text-primary transition-colors">
+                                        <div className="w-24 h-24 rounded-full bg-[#172554] border-2 border-dashed border-[#1e40af] flex items-center justify-center overflow-hidden hover:border-[#3b82f6] transition-colors duration-300">
+                                            <span className="text-[#bfdbfe] text-3xl group-hover:text-[#3b82f6] transition-colors">
                                                 <MdOutlineAddAPhoto />
                                             </span>
                                         </div>
 
-                                        <div className="absolute bottom-0 right-0 bg-primary text-white p-1.5 rounded-full shadow-lg">
+                                        <div className="absolute bottom-0 right-0 bg-[#3b82f6] text-white p-1.5 rounded-full shadow-lg">
                                             <span className="text-sm font-bold">
                                                 <MdOutlineModeEdit />
                                             </span>
@@ -63,7 +61,7 @@ export default function Profile() {
                                         <p className="text-xs text-gray-500 dark:text-[#bfdbfe]">
                                             Recommended size: 400x400px
                                         </p>
-                                        <button className="text-primary text-sm font-bold hover:underline self-start mt-1">
+                                        <button className="text-[#3b82f6] text-sm font-bold hover:underline self-start mt-1">
                                             Choose File
                                         </button>
                                     </div>
@@ -82,15 +80,15 @@ export default function Profile() {
                                         type="text"
                                         value="alex_dev"
                                         placeholder="username"
-                                        className="w-full bg-[#172554] border border-[#1e40af] text-white text-base rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent block p-4 pl-12 placeholder-[#bfdbfe] transition-all"
+                                        className="w-full bg-[#172554] border border-[#1e40af] text-white text-base rounded-lg focus:ring-2 focus:ring-[#3b82f6] focus:border-transparent block p-4 pl-12 placeholder-[#bfdbfe] transition-all"
                                     />
                                     <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#bfdbfe] font-medium text-lg">@</span>
-                                    <span className="absolute right-4 top-1/2 -translate-y-1/2 text-primary">
+                                    <span className="absolute right-4 top-1/2 -translate-y-1/2 text-[#3b82f6]">
                                         <IoMdCheckmarkCircleOutline />
                                     </span>
                                 </div>
 
-                                <p className="text-primary text-sm flex items-center gap-1 mt-1">
+                                <p className="text-[#3b82f6] text-sm flex items-center gap-1 mt-1">
                                     <IoMdCheckmark className="text-sm" />
                                     Username is available
                                 </p>
@@ -107,7 +105,7 @@ export default function Profile() {
                                     rows={4}
                                     placeholder="Hello! I'm new here..."
                                     defaultValue="Coding late into the night 🌙. Do not disturb unless it's pizza."
-                                    className="w-full bg-[#172554] border border-[#1e40af] text-white text-base rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent block p-4 placeholder-[#bfdbfe] resize-none transition-all"
+                                    className="w-full bg-[#172554] border border-[#1e40af] text-white text-base rounded-lg focus:ring-2 focus:ring-[#3b82f6] focus:border-transparent block p-4 placeholder-[#bfdbfe] resize-none transition-all"
                                 />
 
                                 <p className="text-gray-500 dark:text-[#64748b] text-xs text-right">64/150 characters</p>
@@ -117,7 +115,8 @@ export default function Profile() {
                             <div className="pt-4 flex items-center gap-4">
                                 <button
                                     className="group relative inline-flex items-center gap-3 bg-[#3b82f6] hover:bg-[#2563eb] text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-xl shadow-[#3b82f6]/20"
-                                >                                    Save &amp; Continue
+                                >
+                                    Save &amp; Continue
                                 </button>
 
                                 <button className="px-6 py-4 text-[#bfdbfe] hover:text-white font-semibold transition-colors">
@@ -129,7 +128,6 @@ export default function Profile() {
                         {/* Live Preview */}
                         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start max-w-md mx-auto lg:mx-0">
                             <div className="w-full">
-
                                 <div className="flex items-center gap-2 mb-4">
                                     <span className="text-[#bfdbfe]">
                                         <MdOutlineVisibility />
@@ -141,12 +139,12 @@ export default function Profile() {
 
                                 <div className="bg-gradient-to-br from-[#1e3a8a] to-[#0f172a] rounded-2xl p-6 sm:p-8 border border-[#1e40af] shadow-2xl relative overflow-hidden">
 
-                                    <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
-                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+                                    <div className="absolute -top-20 -right-20 w-40 h-40 bg-[#3b82f6]/10 rounded-full blur-3xl"></div>
+                                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#3b82f6] to-transparent opacity-50"></div>
 
                                     <div className="relative z-10 flex flex-col items-center text-center">
                                         <div className="relative mb-6">
-                                            <div className="w-32 h-32 rounded-full p-1 bg-gradient-to-br from-primary to-[#1d4ed8]">
+                                            <div className="w-32 h-32 rounded-full p-1 bg-gradient-to-br from-[#3b82f6] to-[#1d4ed8]">
                                                 <div
                                                     className="w-full h-full rounded-full bg-cover bg-center border-4 border-[#1e3a8a]"
                                                     style={{
@@ -156,7 +154,7 @@ export default function Profile() {
                                                 ></div>
                                             </div>
 
-                                            <div className="absolute bottom-2 right-2 w-6 h-6 bg-primary rounded-full border-4 border-[#1e3a8a]"></div>
+                                            <div className="absolute bottom-2 right-2 w-6 h-6 bg-[#3b82f6] rounded-full border-4 border-[#1e3a8a]"></div>
                                         </div>
 
                                         <h3 className="text-2xl font-bold text-white mb-1">@alex_dev</h3>
@@ -182,16 +180,17 @@ export default function Profile() {
                                     </div>
                                 </div>
 
-                                <div className="mt-6 flex items-start gap-3 bg-primary/10 rounded-lg p-4 border border-primary/20">
-                                    <span className="text-primary mt-0.5"><IoInformationCircleOutline /></span>
-
+                                <div className="mt-6 flex items-start gap-3 bg-[#3b82f6]/10 rounded-lg p-4 border border-[#3b82f6]/20">
+                                    <span className="text-[#3b82f6] mt-0.5"><IoInformationCircleOutline /></span>
                                     <p className="text-sm text-[#bfdbfe]">
-                                        <span className="text-primary font-bold">Pro Tip:</span> Using a real photo helps
+                                        <span className="text-[#3b82f6] font-bold">Pro Tip:</span> Using a real photo helps
                                         your team recognize you instantly. You can change this later in settings.
                                     </p>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
 
                 </div>
