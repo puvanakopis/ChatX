@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+body {
+  background-color: var(--color-background-dark);
+  color: var(--color-primary);
+  font-family: var(--font-display);
+}
+
+.button {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-lg);
+}
+
+
+:root {
+  /* Colors */
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-background-dark: #020617;
+  --color-surface-dark: #0f172a;
+  --color-surface-border: #1e293b;
+
+  /* Font */
+  --font-display: 'Manrope', sans-serif;
+
+  /* Border Radius */
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+}
+
+/* Optional: Dark mode variables */
+.dark {
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-background-dark: #020617;
+  --color-surface-dark: #0f172a;
+  --color-surface-border: #1e293b;
+}
